@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+    <nav id="desktop-nav">
+        <div class="logo">NAME</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#experiance">Experiance</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <button id="theme-btn" class="theme-toggle">🌙</button>
+        <select id="lang-select" class="lang-toggle">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#profile'"
+        />
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">NAME</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+                <li><a href="#experiance" onclick="toggleMenu()">Experiance</a></li>
+                <li><a href="#projets"onclick="toggleMenu()">Projets</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div> 
+        </div>
+        <button id="theme-btn-mobile" class="theme-toggle">🌙</button>
+        <select id="lang-select-mobile" class="lang-toggle">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+    </nav>
+
+  <!-- MAIN PROJECT SECTION -->
+  <main id="project-detail">
+    <h1 class="title">Projet Site Web</h1>
+
+    <div class="project-content">
+      <!-- Left: Carousel / Demo -->
+      <div class="project-carousel">
+        <div class="carousel">
+          <img src="./assets/siteUni/project-1.png" alt="Screenshot 1" class="active">
+          <img src="./assets/siteUni/Project-1_2.png" alt="Screenshot 2">
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev">&#10094;</button>
+          <button class="carousel-btn" id="next">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Right: Description -->
+      <div class="project-description">
+        <h2>Description</h2>
+        <p>
+          Ce projet est un site web qui présente le BUT Informatique. 
+          Il démontre mes compétences en HTML, CSS (Bootstrap) et responsive design.
+        </p>
+        <h3>Fonctionnalités principales :</h3>
+        <ul>
+          <li>Interface utilisateur moderne et adaptative</li>
+          <li>Menu responsive</li>
+        </ul>
+
+        <h3>Technologies utilisées :</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Bootstrap)</li>
+        </ul>
+
+        <div class="btn-container">
+          <button class="btn btn-color-3" onclick="window.location.href='index.html#projects'">
+            Retour
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#experiance">Experiance</a></li>
+                    <li><a href="./#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>2025 Name</p>
+    </footer>
+
+</body>
+</html>

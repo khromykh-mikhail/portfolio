@@ -1,12 +1,10 @@
 import { translations } from "./translations.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // =====================
-    // 🌙 THEME MANAGEMENT
-    // =====================
+
     const themeBtn = document.getElementById('theme-btn');
     const themeBtnMobile = document.getElementById('theme-btn-mobile');
-
+// theme
     function toggleTheme() {
         document.body.classList.toggle('dark-mode');
         const dark = document.body.classList.contains('dark-mode');
@@ -24,9 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (themeBtnMobile) themeBtnMobile.textContent = '☀️';
     }
 
-    // =====================
-    // 🌐 LANGUAGE MANAGEMENT
-    // =====================
+// language
     const langSelect = document.getElementById('lang-select');
     const langSelectMobile = document.getElementById('lang-select-mobile');
 
@@ -38,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (translations[lang][key]) el.textContent = translations[lang][key];
         });
 
-        // Optional sections (exist only on homepage)
+// Optional sections (exist only on homepage)
         const profileIntro = document.querySelector('.section__text__p1');
         const profileDesc = document.querySelector('.section__text__p2');
         const downloadBtn = document.querySelector('.btn-color-2');
@@ -68,9 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (langSelect) langSelect.value = savedLang;
     if (langSelectMobile) langSelectMobile.value = savedLang;
 
-    // =====================
-    // 🍔 MENU TOGGLE
-    // =====================
+// menu toogle
     const menuIcon = document.querySelector(".hamburger-icon");
     if (menuIcon) {
         menuIcon.addEventListener('click', () => {
@@ -79,9 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // =====================
-    // 🎠 CAROUSEL (if exists)
-    // =====================
+// caroussel
     const images = document.querySelectorAll('.carousel img');
     if (images.length > 0) {
         let current = 0;

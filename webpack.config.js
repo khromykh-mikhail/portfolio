@@ -38,7 +38,6 @@ export default {
       filename: "index.html",
     }),
 
-    // Each project page
     ...[1, 2, 3, 4, 5].map(
       (i) =>
         new HtmlWebpackPlugin({
@@ -47,8 +46,13 @@ export default {
         })
     ),
 
+    // Copy all static assets (images, etc.)
     new CopyWebpackPlugin({
-      patterns: [{ from: "./src/assets", to: "assets" }],
+      patterns: [
+        { from: "./src/assets", to: "assets" },
+        { from: "./src/styles", to: "styles" },
+        { from: "./src/scripts", to: "scripts" },
+      ],
     }),
   ],
 };

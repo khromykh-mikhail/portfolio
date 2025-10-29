@@ -8,6 +8,8 @@
     .about-containers{
         flex-wrap:wrap;
     }
+
+    
 }
 
 @media screen and (max-width:1200px) {
@@ -58,6 +60,16 @@
     #hamburger-nav .lang-toggle {
         display: block;
     }
+
+    #hamburger-nav .theme-toggle {
+    top: 0.5rem;
+    right: 2rem;
+  }
+
+  #hamburger-nav .lang-toggle {
+    top: 3.5rem;
+    right: 2rem;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -67,7 +79,42 @@
     #hamburger-nav .theme-toggle {
         display: none;
     }
+    
 }
+
+
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+ 
+  #hamburger-nav .theme-toggle,
+  #hamburger-nav .lang-toggle {
+    z-index: 20; 
+  }
+
+  
+  .menu-links {
+    z-index: 10;
+  }
+
+  
+  #hamburger-nav .theme-toggle {
+    top: 1rem;
+    right: 8rem;
+  }
+
+  #hamburger-nav .lang-toggle {
+    top: 4rem;
+    right: 8rem;
+  }
+}
+
 
 @media screen and (max-width:600px) {
     #contact,
@@ -105,7 +152,7 @@
     }
 
     .logo{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .nav-links{
         flex-direction: column;
@@ -130,4 +177,30 @@
     .text-container{
         text-align: justify;
     }
+
+        #hamburger-nav .theme-toggle {
+    top: 0.5rem;
+    right: 7rem;
+  }
+
+  #hamburger-nav .lang-toggle {
+    top: 3.5rem;
+    right: 7rem;
+  }
+
+}
+
+
+@media screen and (max-width:380px) {
+   
+
+    #hamburger-nav .theme-toggle {
+    top: -0.5rem;
+    right: 0rem;
+  }
+
+  #hamburger-nav .lang-toggle {
+    top: 5rem;
+    right: 0rem;
+  }
 }

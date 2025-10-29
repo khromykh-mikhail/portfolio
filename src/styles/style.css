@@ -1,5 +1,4 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --bg-gradient: linear-gradient(to right, #d8e2ff, #9dadfc, #8a91fc);
@@ -54,6 +53,11 @@ p {
     color: rgb(24, 14, 51);
 }
 
+.text-container p{
+    text-indent: 3ch;
+    margin-bottom: 1em;
+}
+
 li {
     list-style-type: none;
 }
@@ -66,6 +70,12 @@ li {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.theme-toggle,
+.lang-toggle {
+  position: relative;
+  z-index: 15;
 }
 
 .theme-toggle:hover {
@@ -147,6 +157,7 @@ a:hover {
 
 #hamburger-nav {
     display: none;
+    z-index: 5;
 }
 
 .hamburger-menu {
@@ -194,6 +205,7 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 10;
 }
 
 .menu-links a {
@@ -535,7 +547,7 @@ article.icon {
 .project-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 6rem;
   justify-content: center;
   align-items: flex-start;
   width: 100%;

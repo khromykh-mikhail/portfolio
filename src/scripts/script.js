@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // Optional sections (exist only on homepage)
         const profileIntro = document.querySelector('.section__text__p1');
         const profileDesc = document.querySelector('.section__text__p2');
-        const downloadBtn = document.querySelector('.btn-color-2');
+        const downloadBtn = document.querySelector('#profile .btn-color-2');
         const contactBtn = document.querySelector('.btn-color-1');
-        const expTitle = document.querySelector('#experiance .title');
+        const expTitle = document.querySelector('#experience .title');
         const projTitle = document.querySelector('#projects .title');
         const contactTitle = document.querySelector('#contact .title');
         const returnBtn = document.querySelector('.btn-color-3');

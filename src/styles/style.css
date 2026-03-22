@@ -144,7 +144,9 @@ a:hover {
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px
 }
 
 .logo:hover {
@@ -450,18 +452,18 @@ section {
 
 /* EXPERIENCE SECTION*/
 
-#experiance {
+#experience {
     position: relative;
 }
 
-.experiance-sub-title{
+.experience-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experiance-details-container {
+.experience-details-container {
     display:flex;
     align-items: center;
     flex-wrap: wrap;

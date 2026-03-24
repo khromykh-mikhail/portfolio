@@ -270,7 +270,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    min-height: fit-content;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -520,6 +520,7 @@ article.icon {
 
 #projects {
     position:relative;
+    padding-bottom: 6rem;
     
 }
 
@@ -712,7 +713,8 @@ body.dark-mode .filter-tag:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height:120vh; 
+    min-height: 40vh;
+    padding: 4vh 0 6rem; 
 }
 
 .contact-info-upper-container {
